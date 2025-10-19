@@ -1,0 +1,253 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2d3748;
+  background-color: #f8f9fa;
+}
+
+
+/* === HEADING STYLE === */
+.section-heading {
+  color: #0077b6;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #f4b400;
+  margin: 0.5rem auto 1rem auto;
+  border-radius: 2px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: #ffffff;
+  z-index: 1030;
+  position: sticky;
+  top: 0;
+}
+.navbar-brand {
+  color: #0077b6 !important;
+  font-weight: 700;
+}
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #f4b400 !important;
+}
+
+/* === HERO === */
+.hero-section {
+  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+  padding: 7rem 0 5rem 0;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+  height: 100%;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay untuk membuat teks lebih terbaca */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 119, 182, 0.85) 0%, rgba(0, 180, 216, 0.85) 100%);
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hero-section .btn {
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade transition for carousel */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+/* === APD CARD STYLE === */
+#apd {
+  background: #f8f9fa;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.apd-card {
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.apd-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+.apd-img {
+  height: 200px;
+  overflow: hidden;
+  background: #eaf6ff;
+}
+.apd-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apd-title {
+  color: #0077b6;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+/* === FOOTER === */
+.footer {
+  background: linear-gradient(135deg, #0077b6 0%, #0096c7 100%);
+  color: #ffffff;
+  text-align: center;
+}
+.footer .btn {
+  background-color: #ffffff;
+  color: #0077b6;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.footer .btn:hover {
+  background-color: #f4b400;
+  color: #1a202c;
+}
+
+/* === CARD GENERAL === */
+.card {
+  border-radius: 10px;
+}
+.card-body h4 {
+  font-weight: 600;
+}
+
+/* === SCROLL ANIMATION === */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === BUTTON STYLE === */
+.btn-warning {
+  background-color: #f4b400;
+  border-color: #f4b400;
+  color: #1a202c;
+  font-weight: 700;
+}
+.btn-warning:hover {
+  background-color: #ffcc33;
+  border-color: #ffcc33;
+}
+.hover-translate-y-n3:hover {
+  transform: translateY(-6px);
+  transition: all 0.3s ease;
+}
+
+/* === ICON PLACEHOLDER (Keselamatan Kerja) === */
+.icon-placeholder {
+  width: 60px;
+  height: 60px;
+  background: #eaf6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0077b6;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon-placeholder {
+  background: #0077b6;
+  color: #fff;
+  transform: scale(1.05);
+}
+/* === ICON PLACEHOLDER untuk Section Headings === */
+.section-heading .icon-placeholder {
+  margin: 0 auto 1rem auto;
+  width: 70px;
+  height: 70px;
+  background: #eaf6ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0077b6;
+  font-size: 28px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.section-heading:hover .icon-placeholder {
+  background: #0077b6;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 5rem 1rem;
+  }
+  .section-heading::after {
+    margin: 0.5rem auto 1rem auto;
+  }
+  .apd-img {
+    height: 160px;
+  }
+}

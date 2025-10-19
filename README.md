@@ -1,203 +1,272 @@
-<h1 id="argon-design-system"><a href="https://www.creative-tim.com/product/argon-design-system">Argon Design System</a></h1>
+# 🚢 Website K3 Logistik Laut
 
-<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/90/original/opt_argon_thumbnail.jpg" alt="Product Gif" /></p>
+Website edukasi tentang **Keselamatan dan Kesehatan Kerja (K3)** di sektor logistik laut yang dibangun menggunakan Bootstrap dan Argon Design System.
 
-<p>Start your development with a Design System for Bootstrap 4. It is open source, free and it features many components that can help you create amazing websites.</p>
+![K3 Logistik Laut](https://img.shields.io/badge/K3-Logistik%20Laut-blue?style=for-the-badge)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-4.x-purple?style=for-the-badge&logo=bootstrap)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-<h4 id="fully-coded-components">Fully Coded Components</h4>
+## 📋 Deskripsi Project
 
-<p>Argon Design System is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files.</p>
+Website ini merupakan platform edukasi yang menyediakan informasi lengkap mengenai Keselamatan dan Kesehatan Kerja (K3) di sektor logistik laut. Website ini dirancang dengan tampilan modern dan responsif untuk memberikan pengalaman pengguna yang optimal dalam mempelajari aspek-aspek penting K3 di lingkungan pelabuhan dan logistik maritim.
 
-<p>You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Design System is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.</p>
+## ✨ Fitur Utama
 
-<p>Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.</p>
+### 🎯 Konten Lengkap
+- **Hero Section dengan Carousel** - Slideshow gambar otomatis tentang aktivitas logistik laut
+- **Tentang Logistik Laut** - Penjelasan komprehensif tentang peran dan pentingnya logistik laut
+- **Landasan Hukum K3** - Regulasi dan peraturan K3 di Indonesia
+- **Lingkungan Kerja** - Informasi kondisi lingkungan kerja di area pelabuhan
+- **Keselamatan Kerja** - Faktor-faktor, bahaya, dan metode pencegahan kecelakaan
+- **Alat Pelindung Diri (APD)** - 9 jenis APD lengkap dengan gambar dan deskripsi
+- **Pertolongan Pertama (P3K)** - Panduan P3K untuk kecelakaan kerja di logistik laut
 
-<h4 id="complex-documentation">Complex Documentation</h4>
+### 🎨 Desain & User Experience
+- ✅ **Responsive Design** - Tampilan optimal di semua perangkat (desktop, tablet, mobile)
+- ✅ **Modern UI/UX** - Desain clean dengan Stripe-inspired minimalist style
+- ✅ **Smooth Animations** - Scroll animations untuk pengalaman visual yang menarik
+- ✅ **Sticky Navigation** - Navbar yang selalu terlihat saat scroll
+- ✅ **Carousel Hero** - Auto-rotating background images setiap 4 detik
+- ✅ **Icon Integration** - Font Awesome icons untuk visual yang informatif
 
-<p>Each element is well presented in a very complex documentation. You can read more about the idea behind this design system here. You can check the components here and the foundation here.</p>
+### 🚀 Performance
+- Fast loading dengan optimized assets
+- Clean code structure
+- SEO-friendly markup
+- Cross-browser compatibility
 
-<h4 id="example-pages">Example Pages</h4>
+## 📑 Table of Contents
 
-<p>If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.</p>
+- [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+- [Struktur Project](#-struktur-project)
+- [Cara Instalasi](#-cara-instalasi)
+- [Panduan Penggunaan](#-panduan-penggunaan)
+- [Kustomisasi](#-kustomisasi)
+- [Browser Support](#-browser-support)
+- [Kontribusi](#-kontribusi)
+- [Lisensi](#-lisensi)
+- [Kontak](#-kontak)
 
-<h2 id="table-of-contents">Table of Contents</h2>
+## 🛠 Teknologi yang Digunakan
 
-<ul>
-  <li><a href="#demo">Demo</a></li>
-  <li><a href="#quick-start">Quick Start</a></li>
-  <li><a href="#deploy">Deploy</a></li>
-  <li><a href="#documentation">Documentation</a></li>
-  <li><a href="#file-structure">File Structure</a></li>
-  <li><a href="#browser-support">Browser Support</a></li>
-  <li><a href="#resources">Resources</a></li>
-  <li><a href="#reporting-issues">Reporting Issues</a></li>
-  <li><a href="#technical-support-or-questions">Technical Support or Questions</a></li>
-  <li><a href="#licensing">Licensing</a></li>
-  <li><a href="#useful-links">Useful Links</a></li>
-</ul>
+### Frontend Framework & Libraries
+- **Bootstrap 4.x** - Framework CSS untuk responsive design
+- **Argon Design System** - Design system dari Creative Tim
+- **jQuery 3.x** - JavaScript library
+- **Font Awesome 6.5** - Icon library
+- **Popper.js** - Tooltip & popover positioning
 
-<h2 id="versions">Versions</h2>
+### CSS Preprocessing
+- **SCSS/Sass** - CSS preprocessor untuk styling yang lebih efisien
 
-<p>We are coding Argon Design System for this frameworks also. Chek’em out:</p>
+### Fonts & Icons
+- **Open Sans** - Google Fonts
+- **Font Awesome** - Icon set
+- **Nucleo Icons** - Additional icon set dari Argon
 
-<ul>
-  <li><a href="https://www.creative-tim.com/product/vue-argon-design-system">Vue.js</a></li>
-</ul>
+## 📂 Struktur Project
 
-<h3 id="coming-soon">Coming soon</h3>
-
-<ul>
-  <li>Angular</li>
-  <li>React</li>
-  <li>Sketch</li>
-  <li>Photoshop</li>
-</ul>
-
-<h2 id="demo">Demo</h2>
-
-<ul>
-  <li><a href="https://demos.creative-tim.com/argon-design-system">Index Page</a></li>
-  <li><a href="https://demos.creative-tim.com/argon-design-system/examples/landing.html">Landing page</a></li>
-  <li><a href="https://demos.creative-tim.com/argon-design-system/examples/profile.html">Profile Page</a></li>
-  <li><a href="https://demos.creative-tim.com/argon-design-system/examples/login.html">Login Page</a></li>
-  <li><a href="https://demos.creative-tim.com/argon-design-system/examples/register.html">Register Page</a></li>
-  <li><a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html">Documentation</a></li>
-</ul>
-
-<p><a href="https://demos.creative-tim.com/argon-design-system">View More</a></p>
-
-<h2 id="download-and-installation">Download and Installation</h2>
-
-<ul>
-  <li><a href="https://github.com/creativetimofficial/argon-design-system/archive/master.zip">Download from Github</a></li>
-  <li>
-    <p><a href="https://www.creative-tim.com/product/argon-design-system">Download from Creative Tim</a></p>
-  </li>
-  <li>
-    <p>Install with Bower: <code class="highlighter-rouge">bower install argon-design-system</code></p>
-  </li>
-  <li>
-    <p>Install with Composer: <code class="highlighter-rouge">composer create-project creativetimofficial/argon-design-system</code></p>
-  </li>
-  <li>
-    <p>Clone from Github: <code class="highlighter-rouge">git clone {{ site.product.github_clone }}</code></p>
-  </li>
-  <li>
-    <p>Install with Npm: <code class="highlighter-rouge">npm i argon-design-system-free</code></p>
-  </li>
-  <li>Install with Yarn: <code class="highlighter-rouge">yarn add argon-design-system-free</code></li>
-</ul>
-
-<h2 id="deploy">Deploy</h2>
-
-<p>:rocket: You can deploy your own version of the template to Genezio with one click:
-
-[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/argon-design-system&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)</p>
-
-<h2 id="documentation">Documentation</h2>
-
-<p>The documentation for the Argon Design System is hosted at our <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html">website</a>.</p>
-
-<h2 id="file-structure">File Structure</h2>
-
-<p>Within the download you’ll find the following directories and files:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>argon/
-├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
+```
+web_k3/
+├── index.html                    # Redirect file (optional)
+├── k3-landing.html              # Main landing page
+├── README.md                    # Documentation
 ├── assets/
-  ├── css/
-  │   ├── argon.css
-  │   ├── argon.css.map
-  │   ├── argon.min.css
-  │   ├── argon.min.css.map
-  └── img/
-  │   ├── argon/
-  │   ├── brand/
-  │   ├── icons/
-  │   ├── ill/
-  └── js/
-  │   ├── argon.js
-  │   └── argon.min.js
-  └── scss/
-  │   ├── bootstrap/
-  │   ├── custom/
-  │   ├── argon.scss
-  └── vendor/
-      ├── bootstrap/
-      ├── bootstrap-datepicker/
-      ├── font-awesome/
-      ├── headroom/
-      ├── jquery/
-      ├── nouislider/
-      ├── nucleo/
-      ├── popper/
+│   ├── css/
+│   │   ├── argon-design-system.css
+│   │   ├── argon-design-system.min.css
+│   │   └── k3-styles.css        # Custom K3 styles
+│   ├── js/
+│   │   ├── core/
+│   │   │   ├── jquery.min.js
+│   │   │   ├── bootstrap.min.js
+│   │   │   └── popper.min.js
+│   │   └── k3-scripts.js        # Custom K3 scripts
+│   ├── img/
+│   │   ├── hero/                # Hero carousel images
+│   │   │   ├── hero-1.jpg
+│   │   │   ├── hero-2.jpg
+│   │   │   ├── hero-3.jpg
+│   │   │   └── hero-4.jpg
+│   │   └── apd/                 # APD images
+│   │       ├── helmet.jpg
+│   │       ├── gloves.jpg
+│   │       ├── goggles.jpg
+│   │       ├── earplug.jpg
+│   │       ├── mask.jpg
+│   │       ├── shoes.jpg
+│   │       ├── coverall.jpg
+│   │       ├── harness.jpg
+│   │       └── lifejacket.jpg
+│   └── scss/
+│       └── argon-design-system/ # SCSS source files
+├── docs/                        # Argon documentation
+└── examples/                    # Argon example pages
+```
 
-</code></pre></div></div>
+## 🚀 Cara Instalasi
 
-<h2 id="browser-support">Browser Support</h2>
+### Clone Repository
 
-<p>At present, we officially aim to support the last two versions of the following browsers:</p>
+```bash
+git clone https://github.com/Fallujahrama/Web-K3-Logistik.git
+cd Web-K3-Logistik
+```
 
-<p><img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64" /></p>
+### Metode 1: Langsung Buka di Browser
+Tidak memerlukan instalasi khusus, cukup buka file `k3-landing.html` di browser:
 
-<h2 id="resources">Resources</h2>
+```bash
+# macOS
+open k3-landing.html
 
-<ul>
-  <li>Demo: <a href="https://demos.creative-tim.com/argon-design-system">https://demos.creative-tim.com/argon-design-system</a></li>
-  <li>Download: <a href="https://www.creative-tim.com/product/argon-design-system">https://www.creative-tim.com/product/argon-design-system</a></li>
-  <li>Documentation: <a href="https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html">https://demos.creative-tim.com/argon-design-system/docs/getting-started/overview.html</a></li>
-  <li>License Agreement: <a href="https://www.creative-tim.com/license">https://www.creative-tim.com/license</a></li>
-  <li>Support: <a href="https://www.creative-tim.com/contact-us">https://www.creative-tim.com/contact-us</a></li>
-  <li>Issues: <a href="https://github.com/creativetimofficial/argon-design-system/issues">Github Issues Page</a></li>
-</ul>
+# Windows
+start k3-landing.html
 
-<h2 id="reporting-issues">Reporting Issues</h2>
+# Linux
+xdg-open k3-landing.html
+```
 
-<p>We use GitHub Issues as the official bug tracker for the Argon Design System. Here are some advices for our users that want to report an issue:</p>
+### Metode 2: Menggunakan Local Server
 
-<ol>
-  <li>Make sure that you are using the latest version of the Argon Design System. Check the CHANGELOG from your copy on our <a href="https://www.creative-tim.com">website</a>.</li>
-  <li>Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.</li>
-  <li>Some issues may be browser specific, so specifying in what browser you encountered the issue might help.</li>
-</ol>
+#### Dengan PHP
+```bash
+php -S localhost:8000
+```
 
-<h2 id="technical-support-or-questions">Technical Support or Questions</h2>
+Kemudian buka browser dan akses: `http://localhost:8000/k3-landing.html`
 
-<p>If you have questions or need help integrating the product please <a href="https://www.creative-tim.com/contact-us">contact us</a> instead of opening an issue.</p>
+## 📖 Panduan Penggunaan
 
-<h2 id="licensing">Licensing</h2>
+### Navigasi Website
 
-<ul>
-  <li>
-    <p>Copyright © 2019 Creative Tim (https://www.creative-tim.com)</p>
-  </li>
-  <li>
-    <p>Licensed under MIT (https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md)</p>
-  </li>
-</ul>
+Website terdiri dari beberapa section yang dapat diakses melalui navbar:
 
-<h2 id="useful-links">Useful Links</h2>
+1. **Tentang** - Informasi tentang perusahaan logistik laut
+2. **Landasan Hukum** - Regulasi K3 di Indonesia
+3. **Lingkungan Kerja** - Kondisi lingkungan kerja fisik
+4. **Keselamatan Kerja** - Faktor bahaya dan pencegahan
+5. **APD** - 9 jenis Alat Pelindung Diri
+6. **P3K** - Panduan pertolongan pertama
 
-<ul>
-  <li><a href="https://www.creative-tim.com/bootstrap-themes">More products</a> from Creative Tim</li>
-  <li><a href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w">Tutorials</a></li>
-  <li><a href="https://www.creative-tim.com/bootstrap-themes/free">Freebies</a> from Creative Tim</li>
-  <li><a href="https://www.creative-tim.com/affiliates/new">Affiliate Program</a> (earn money)</li>
-</ul>
+### Fitur Hero Carousel
 
-<h2 id="social-media">Social Media</h2>
+Hero section menampilkan carousel gambar yang berganti otomatis setiap 4 detik. Untuk mengubah gambar:
 
-<ul>
-  <li>Twitter: <a href="https://twitter.com/CreativeTim">https://twitter.com/CreativeTim</a></li>
-  <li>Facebook: <a href="https://www.facebook.com/CreativeTim">https://www.facebook.com/CreativeTim</a></li>
-  <li>Dribbble: <a href="https://dribbble.com/creativetim">https://dribbble.com/creativetim</a></li>
-  <li>Google+: <a href="https://plus.google.com/+CreativetimPage">https://plus.google.com/+CreativetimPage</a></li>
-  <li>Instagram: <a href="https://www.instagram.com/CreativeTimOfficial">https://www.instagram.com/CreativeTimOfficial</a></li>
-</ul>
-# Web-K3-Logistik
+1. Letakkan gambar di folder `assets/img/hero/`
+2. Beri nama: `hero-1.jpg`, `hero-2.jpg`, `hero-3.jpg`, `hero-4.jpg`
+3. Rekomendasi ukuran: **1920x600 pixels** (landscape)
+4. Format: JPG atau PNG
+
+### Mengganti Gambar APD
+
+Gambar APD terletak di `assets/img/apd/`. File yang dibutuhkan:
+- `helmet.jpg` - Helm keselamatan
+- `gloves.jpg` - Sarung tangan
+- `goggles.jpg` - Kacamata/face shield
+- `earplug.jpg` - Pelindung telinga
+- `mask.jpg` - Masker/respirator
+- `shoes.jpg` - Sepatu safety
+- `coverall.jpg` - Rompi/coverall
+- `harness.jpg` - Body harness
+- `lifejacket.jpg` - Pelampung
+
+## 🎨 Kustomisasi
+
+### Mengubah Warna Tema
+
+Edit file `assets/css/k3-styles.css` untuk mengubah skema warna:
+
+```css
+/* Warna Utama */
+.hero-section {
+  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
+}
+
+/* Warna Aksen */
+.btn-warning {
+  background-color: #f4b400;
+}
+
+/* Warna Teks Heading */
+.section-heading {
+  color: #0077b6;
+}
+```
+
+### Mengubah Kecepatan Carousel
+
+Edit nilai `data-interval` di `k3-landing.html`:
+
+```html
+<!-- 4000 = 4 detik -->
+<div id="heroCarousel" class="carousel slide" data-interval="4000">
+```
+
+### Menambah/Mengurangi Gambar Carousel
+
+Untuk menambah gambar ke-5:
+
+```html
+<div class="carousel-item">
+  <img src="./assets/img/hero/hero-5.jpg" class="d-block w-100 hero-bg-img" alt="K3 Logistik Laut 5">
+</div>
+```
+
+### Custom Animations
+
+Animasi scroll dapat diatur di `assets/js/k3-scripts.js`:
+
+```javascript
+// Scroll Animation Observer
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+```
+
+## 🤝 Kontribusi
+
+Kontribusi, issues, dan feature requests sangat diterima!
+
+### Cara Berkontribusi
+
+1. Fork project ini
+2. Buat branch fitur baru (`git checkout -b feature/AmazingFeature`)
+3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buka Pull Request
+
+### Development Guidelines
+
+- Ikuti struktur kode yang sudah ada
+- Gunakan nama variable dan function yang deskriptif
+- Tambahkan komentar untuk kode yang kompleks
+- Test di berbagai browser sebelum submit PR
+- Update README.md jika ada perubahan signifikan
+
+
+### Attribution
+
+Website ini dibangun menggunakan:
+- **Argon Design System** by [Creative Tim](https://www.creative-tim.com)
+- **Bootstrap 4** by [Bootstrap Team](https://getbootstrap.com)
+- **Font Awesome** by [Fonticons, Inc.](https://fontawesome.com)
+
+
+<div align="center">
+
+**⚠️ Safety First! Keselamatan adalah Prioritas ⚠️**
+
+Dibuat dengan ❤️ untuk meningkatkan kesadaran K3 di Indonesia
+
+**🚢 K3 Logistik Laut © 2025**
+
+[![GitHub stars](https://img.shields.io/github/stars/Fallujahrama/Web-K3-Logistik?style=social)](https://github.com/Fallujahrama/Web-K3-Logistik/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Fallujahrama/Web-K3-Logistik?style=social)](https://github.com/Fallujahrama/Web-K3-Logistik/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/Fallujahrama/Web-K3-Logistik?style=social)](https://github.com/Fallujahrama/Web-K3-Logistik/watchers)
+
+</div>
