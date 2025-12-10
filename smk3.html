@@ -10,57 +10,84 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- CSS -->
+  <!-- CSS - HAPUS Bootstrap 5, gunakan Bootstrap 4 dari Argon -->
   <link href="./assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
   <link href="./assets/css/k3-styles.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
 
-<!-- NAVBAR -->
+<!-- NAVBAR - Gunakan struktur yang sama dengan manajemen-resiko.html -->
 <nav class="navbar navbar-main navbar-expand-lg navbar-light shadow py-2">
   <div class="container">
-    <a class="navbar-brand font-weight-bold" href="k3-landing.html">
+    <a class="navbar-brand font-weight-bold" href="index.html">
       <span class="text-primary">K3</span> Logistik Laut
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_global">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbar_global">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="k3-landing.html" class="nav-link">Beranda</a></li>
-        <li class="nav-item"><a href="smk3.html" class="nav-link active">Sistem Manajemen K3</a></li>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tata Kelola
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="manajemen-resiko.html">Manajemen Risiko</a>
+              <a class="dropdown-item active" href="smk3.html">SMK3</a>
+              <a class="dropdown-item" href="audit-k3.html">Audit K3</a>
+            </div>
+          </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION - Samakan dengan struktur manajemen-resiko -->
 <header class="hero-section text-center text-white position-relative">
-    <!-- Background Carousel -->
-    <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-ride="carousel" data-interval="4000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/img/gambar1.jpeg" class="d-block w-100 hero-bg-img" alt="K3 Logistik Laut 1">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/gambar2.jpeg" class="d-block w-100 hero-bg-img" alt="K3 Logistik Laut 2">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/img/gambar3.jpeg" class="d-block w-100 hero-bg-img" alt="K3 Logistik Laut 3">
-        </div>
-        
+  <div class="hero-overlay"></div>
+  
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-ride="carousel" data-interval="4000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/img/hero/hero-1.jpg" class="d-block w-100 hero-bg-img" alt="SMK3 Logistik Laut 1">
       </div>
-    
-    <!-- Overlay untuk membuat teks lebih terbaca -->
-    <div class="hero-overlay"></div>
-    
-    <!-- Content -->
-    <div class="container py-6 position-relative" style="z-index: 10;">
-      <h1 class="display-3 font-weight-bold">Sistem Manajemen K3</h1>
-      <p class="lead mt-3">Kegunaan Sistem Manajemen K3 adalah untuk mengidentifikasi dan mengendalikan risiko, mencegah kecelakaan kerja, melindungi kesehatan pekerja, memastikan kepatuhan terhadap peraturan, serta menjaga kelancaran dan keselamatan proses operasional.</p>
+      <div class="carousel-item">
+        <img src="./assets/img/hero/hero-2.jpg" class="d-block w-100 hero-bg-img" alt="SMK3 Logistik Laut 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/hero/hero-3.jpg" class="d-block w-100 hero-bg-img" alt="SMK3 Logistik Laut 3">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/img/hero/hero-4.jpg" class="d-block w-100 hero-bg-img" alt="SMK3 Logistik Laut 4">
+      </div>
     </div>
+  </div>
+
+  <div class="container position-relative" style="z-index: 10; padding: 4rem 0 3rem 0;">
+    <div class="icon icon-xl icon-shape bg-gradient-primary shadow rounded-circle text-white mb-3 mx-auto">
+      <i class="fas fa-clipboard-check"></i>
+    </div>
+    <h1 class="display-3 font-weight-bold mb-2">Sistem Manajemen K3</h1>
+    <p class="lead mt-2 mb-0">
+      Mengidentifikasi dan mengendalikan risiko, mencegah kecelakaan kerja, melindungi kesehatan pekerja
+    </p>
+    
+    <!-- Badge Indicators -->
+    <div class="d-flex justify-content-center mt-4 flex-wrap">
+      <span class="badge badge-pill badge-lg badge-primary mx-2 mb-2 py-2 px-3">
+        <i class="fas fa-shield-alt mr-1"></i> P2K3
+      </span>
+      <span class="badge badge-pill badge-lg badge-white text-primary mx-2 mb-2 py-2 px-3">
+        <i class="fas fa-users-cog mr-1"></i> Organisasi K3
+      </span>
+      <span class="badge badge-pill badge-lg badge-info mx-2 mb-2 py-2 px-3">
+        <i class="fas fa-certificate mr-1"></i> Sertifikasi
+      </span>
+    </div>
+  </div>
 </header>
 
 <!-- KONTEN SMK3 -->
@@ -540,17 +567,19 @@
     <div class="row">
       <!-- LEFT: Accordion with steps -->
       <div class="col-lg-8 mb-4">
-        <div class="accordion" id="accordionBab3">
+        <div id="accordionBab3">
 
           <!-- 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading1">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                1. Pernyataan Komitmen & Kebijakan K3
-              </button>
-            </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading1">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true">
+                  1. Pernyataan Komitmen & Kebijakan K3
+                </button>
+              </h5>
+            </div>
+            <div id="collapse1" class="collapse show" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Manajemen puncak (General Manager) menerbitkan kebijakan K3 yang memuat komitmen <strong>Zero Accident</strong>, kewajiban mengikuti SOP untuk semua aktivitas logistik, serta mekanisme penyebaran dan penandatanganan kebijakan di seluruh unit kerja.</p>
                 <ul>
                   <li>Komitmen Zero Accident dan perlindungan pekerja.</li>
@@ -562,14 +591,16 @@
           </div>
 
           <!-- 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading2">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                2. Penetapan Cara Penerapan
-              </button>
-            </h2>
-            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading2">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse2">
+                  2. Penetapan Cara Penerapan
+                </button>
+              </h5>
+            </div>
+            <div id="collapse2" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Manajemen menetapkan metode pelaksanaan SMK3 melalui SOP, izin kerja (work permit), dan sistem pelaporan insiden (digital bila memungkinkan).</p>
                 <ul>
                   <li>Pembuatan SOP Bongkar Muat, SOP Crane/Forklift, Pedoman APD.</li>
@@ -581,14 +612,16 @@
           </div>
 
           <!-- 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading3">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                3. Pembentukan Kelompok Kerja (Pokja K3)
-              </button>
-            </h2>
-            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading3">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse3">
+                  3. Pembentukan Kelompok Kerja (Pokja K3)
+                </button>
+              </h5>
+            </div>
+            <div id="collapse3" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Membentuk Pokja K3 yang beranggotakan perwakilan HSE, operator alat berat, supervisor bongkar muat, HRD, dan petugas P3K untuk mengidentifikasi bahaya dan melaporkan hasil evaluasi secara berkala.</p>
                 <p class="mb-0"><strong>Fungsi:</strong> identifikasi bahaya, evaluasi pelaksanaan K3, laporan bulanan ke manajemen.</p>
               </div>
@@ -596,28 +629,32 @@
           </div>
 
           <!-- 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading4">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                4. Penetapan Sumber Daya
-              </button>
-            </h2>
-            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading4">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4">
+                  4. Penetapan Sumber Daya
+                </button>
+              </h5>
+            </div>
+            <div id="collapse4" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">SMK3 memerlukan dukungan tenaga bersertifikat, anggaran tahunan untuk APD/pelatihan, serta fasilitas pendukung seperti pos P3K, jalur evakuasi, dan signage keselamatan.</p>
               </div>
             </div>
           </div>
 
           <!-- 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading5">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                5. Kegiatan Penyuluhan & Pelatihan K3
-              </button>
-            </h2>
-            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5">
+                  5. Kegiatan Penyuluhan & Pelatihan K3
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <ul>
                   <li>Safety Induction untuk pekerja baru.</li>
                   <li>Pelatihan tanggap darurat, kebakaran, oil-spill.</li>
@@ -628,42 +665,48 @@
           </div>
 
           <!-- 6 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading6">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                6. Peninjauan Sistem yang Berjalan
-              </button>
-            </h2>
-            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading6">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse6">
+                  6. Peninjauan Sistem yang Berjalan
+                </button>
+              </h5>
+            </div>
+            <div id="collapse6" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Pokja K3 dan auditor internal melakukan gap analysis: pemeriksaan kelaikan crane, inspeksi tali sling, observasi kepatuhan APD, dan analisis near-miss.</p>
               </div>
             </div>
           </div>
 
           <!-- 7 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading7">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                7. Penyusunan Jadwal Kegiatan
-              </button>
-            </h2>
-            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading7">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse7">
+                  7. Penyusunan Jadwal Kegiatan
+                </button>
+              </h5>
+            </div>
+            <div id="collapse7" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Jadwal tahunan mencakup audit internal (6 bulan), safety meeting mingguan, pelatihan darurat triwulanan, dan audit eksternal tahunan; disahkan oleh Manager HSE.</p>
               </div>
             </div>
           </div>
 
           <!-- 8 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading8">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                8. Pengembangan Sistem Manajemen K3
-              </button>
-            </h2>
-            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading8">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse8">
+                  8. Pengembangan Sistem Manajemen K3
+                </button>
+              </h5>
+            </div>
+            <div id="collapse8" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <ul>
                   <li>Pembaruan SOP & form inspeksi.</li>
                   <li>Prosedur pelaporan insiden berbasis digital.</li>
@@ -674,14 +717,16 @@
           </div>
 
           <!-- 9 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading9">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                9. Penerapan Sistem di Lapangan
-              </button>
-            </h2>
-            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading9">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse9">
+                  9. Penerapan Sistem di Lapangan
+                </button>
+              </h5>
+            </div>
+            <div id="collapse9" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Implementasi meliputi kewajiban APD, penempatan rambu & jalur evakuasi, pengawasan operator bersertifikat, serta pemasangan sensor limit dan alarm pada alat berat.</p>
                 <p class="mb-0"><em>Supervisor lapangan</em> bertanggung jawab memastikan penerapan di unit masing-masing.</p>
               </div>
@@ -689,14 +734,16 @@
           </div>
 
           <!-- 10 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading10">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                10. Proses Audit & Sertifikasi
-              </button>
-            </h2>
-            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionBab3">
-              <div class="accordion-body">
+          <div class="card mb-2">
+            <div class="card-header p-0" id="heading10">
+              <h5 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse10">
+                  10. Proses Audit & Sertifikasi
+                </button>
+              </h5>
+            </div>
+            <div id="collapse10" class="collapse" data-parent="#accordionBab3">
+              <div class="card-body">
                 <p class="mb-2">Audit internal dilakukan setiap semester; audit eksternal oleh lembaga independen. Hasil audit menjadi dasar pemberian penghargaan:</p>
                 <ul>
                   <li>60–84% — Sertifikat & bendera perak</li>
@@ -713,10 +760,10 @@
       <div class="col-lg-4">
         <div class="card shadow-sm mb-4">
           <div class="card-body">
-            <h5 class="fw-bold">Ringkasan Proses</h5>
+            <h5 class="font-weight-bold">Ringkasan Proses</h5>
             <p class="text-muted small">Dari kebijakan manajemen hingga audit & sertifikasi, proses ini memastikan SMK3 berjalan sistematis: komitmen → SOP → Pokja → sumber daya → pelatihan → pemantauan → audit.</p>
             <hr>
-            <h6 class="fw-bold">Fasilitas Kunci</h6>
+            <h6 class="font-weight-bold">Fasilitas Kunci</h6>
             <ul class="small mb-0">
               <li>Tenaga ahli K3 bersertifikat</li>
               <li>Pos P3K & peralatan darurat</li>
@@ -728,16 +775,16 @@
 
         <div class="card shadow-sm">
           <div class="card-body">
-            <h6 class="fw-bold mb-3">Jadwal Kegiatan (Contoh)</h6>
+            <h6 class="font-weight-bold mb-3">Jadwal Kegiatan (Contoh)</h6>
             <table class="table table-sm">
               <tbody>
-                <tr><td>Audit internal</td><td class="text-end">6 bulan</td></tr>
-                <tr><td>Safety meeting</td><td class="text-end">Mingguan</td></tr>
-                <tr><td>Pelatihan darurat</td><td class="text-end">Setiap 3 bulan</td></tr>
-                <tr><td>Audit eksternal</td><td class="text-end">Tahunan</td></tr>
+                <tr><td>Audit internal</td><td class="text-right">6 bulan</td></tr>
+                <tr><td>Safety meeting</td><td class="text-right">Mingguan</td></tr>
+                <tr><td>Pelatihan darurat</td><td class="text-right">Setiap 3 bulan</td></tr>
+                <tr><td>Audit eksternal</td><td class="text-right">Tahunan</td></tr>
               </tbody>
             </table>
-            <a href="#top" class="btn btn-sm btn-primary w-100">Kembali ke Atas</a>
+            <a href="#top" class="btn btn-sm btn-primary btn-block">Kembali ke Atas</a>
           </div>
         </div>
 
@@ -748,8 +795,20 @@
 
 
 
-<!-- BOOTSTRAP JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer -->
+<footer class="footer text-white py-5">
+  <div class="container text-center">
+    <h4 class="font-weight-bold mb-3">K3 Logistik Laut</h4>
+    <p class="mb-4">Berkomitmen menciptakan lingkungan kerja yang aman, sehat, dan produktif di setiap pelabuhan Indonesia.</p>
+    <a href="#top" class="btn btn-white text-primary font-weight-bold">Kembali ke Atas</a>
+  </div>
+</footer>
+
+<!-- BOOTSTRAP 4 JS - bukan Bootstrap 5 -->
+<script src="./assets/js/core/jquery.min.js"></script>
+<script src="./assets/js/core/popper.min.js"></script>
+<script src="./assets/js/core/bootstrap.min.js"></script>
+<script src="./assets/js/k3-scripts.js"></script>
 
 </body>
 </html>
